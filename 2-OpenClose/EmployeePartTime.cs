@@ -3,10 +3,7 @@ namespace OpenClose
     public class EmployeePartTime : Employee
     {
         public static decimal HOUR_VALUE = 20000M;
-        public EmployeePartTime(string fullname, int hoursWorked) : base(fullname, hoursWorked)
-        {
-
-        }
+        public EmployeePartTime(string fullname, int hoursWorked) : base(fullname, hoursWorked) {}
 
         public override decimal CalculateSalaryMonthly()
         {
