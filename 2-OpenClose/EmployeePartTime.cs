@@ -1,11 +1,11 @@
 namespace OpenClose
 {
-    public class EmployeePartTime : Employee
+    public class EmployeePartTime : Employee, ISalary
     {
         public static decimal HOUR_VALUE = 20000M;
         public EmployeePartTime(string fullname, int hoursWorked) : base(fullname, hoursWorked) {}
 
-        public override decimal CalculateSalaryMonthly()
+        public decimal CalculateSalaryMonthly()
         {
             decimal salary = HOUR_VALUE * this.HoursWorked;
             if (this.HoursWorked > 160)

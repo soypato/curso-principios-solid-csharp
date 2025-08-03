@@ -11,7 +11,6 @@ namespace OpenClose
             HoursWorked = hoursWorked;
         }
 
-        public abstract decimal CalculateSalaryMonthly();
     }
 
 }
