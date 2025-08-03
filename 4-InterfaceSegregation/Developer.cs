@@ -1,34 +1,28 @@
+using Interfaces;
 namespace InterfaceSegregation
 {
-    public class Developer : IActivities
+    public class Developer : IGeneralActivities, IDeveloperActivities
     {
         public Developer()
         {
         }
 
-        public void Plan() 
+        public void Plan()
         {
             throw new ArgumentException();
         }
 
-        public void Comunicate() 
+        public void Comunicate()
         {
             throw new ArgumentException();
         }
-
-        public void Design() 
-        {
-            throw new ArgumentException();
-        }
-
-        public void Develop() 
+        public void Design()
         {
             Console.WriteLine("I'm developing the functionalities required");
         }
-
-        public void Test() 
+        public void Develop()
         {
-            throw new ArgumentException();
+            Console.WriteLine("I'm developing the functionalities required");
         }
     }
 }
