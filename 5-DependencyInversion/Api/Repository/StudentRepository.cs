@@ -1,8 +1,11 @@
 using System.Collections.ObjectModel;
+using System.Collections.Generic;
+using Repository;
+using DependencyInversion;
 
 namespace DependencyInversion
 {
-    public class StudentRepository
+    public class StudentRepository : IStudentRepository
     {
         private static ObservableCollection<Student> collection;
 
